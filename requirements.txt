@@ -2,3 +2,5 @@ kagglehub
 tensorflow
 numpy
 scikit-learn
+streamlit
+pillow
