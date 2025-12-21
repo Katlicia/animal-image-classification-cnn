@@ -3,6 +3,9 @@ venv
 create-test-train-datas.py
 test_results.csv
 test_results_augmented.csv
+test_results_model_2.csv
 animal_model.keras
 animal_model_with_augmentation.keras
+animal_model_2.keras
 __pycache__/
+stats.png
