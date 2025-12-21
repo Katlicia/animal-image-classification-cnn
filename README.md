@@ -16,28 +16,6 @@ The project includes dataset preparation, model training, evaluation using multi
 
 The dataset is organized using a directory-based structure compatible with TensorFlow.
 
-data/
-├── train/
-│   ├── butterfly/
-│   ├── cat/
-│   ├── chicken/
-│   ├── cow/
-│   ├── dog/
-│   ├── elephant/
-│   ├── horse/
-│   ├── sheep/
-│   └── squirrel/
-└── test/
-    ├── butterfly/
-    ├── cat/
-    ├── chicken/
-    ├── cow/
-    ├── dog/
-    ├── elephant/
-    ├── horse/
-    ├── sheep/
-    └── squirrel/
-
 Each class folder contains images belonging to that class.
 
 ---
