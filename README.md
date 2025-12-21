@@ -64,10 +64,13 @@ image_path ; true_label ; predicted_label ; confidence
 
 ## How to Run
 
-1. **Setup a virtual environment in the project folder**
+### Setup a virtual environment in the project folder
 ```
 python -m venv venv
 ```
+
+### Activate the virtual environment
+
 ### Windows
 ```
 venv\Scripts\activate
@@ -77,29 +80,29 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-2. **Download the requirements**
+### Download the requirements
 After setting up your venv download the libraries
 ```
 pip install -r requirements.txt
 ``` 
 
-3. **Prepare dataset inside the data directory**
-Run the install-dataset.py to download the dataset.
-Cut the folder before the class folders.
-Print it in the project folder.
-Rename the Italian class names to English.
-Run the create-test-train-datas.py to seperate the train and test datas.
-The code creates 80% train data to 20% test data.
+### Prepare dataset inside the data directory
+1. Run the install-dataset.py to download the dataset.
+2. Cut the folder before the class folders.
+3. Print it in the project folder.
+4. Rename the Italian class names to English.
+5. Run the create-test-train-datas.py to seperate the train and test datas.
+6. The code creates 80% train data to 20% test data.
 
-4. Train the model:
+### Train the model (Or use the pre-trained model)
 ```
 python model/train.py
 ```
-5. Run test datas:
+### Run test datas:
 ```
 python model/detect.py
 ```
-6. Create a web interface with app.py
+### Create a web interface with app.py
 ```
 python app.py
 ```
