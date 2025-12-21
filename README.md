@@ -62,6 +62,16 @@ image_path ; true_label ; predicted_label ; confidence
 
 ---
 
+## Requirements
+
+- Python 3.x
+- KaggleHub (To download the dataset)
+- TensorFlow
+- NumPy
+- Scikit-learn
+- Streamlit
+- Pillow
+
 ## How to Run
 
 ### Setup a virtual environment in the project folder
@@ -106,13 +116,3 @@ python model/detect.py
 ```
 python app.py
 ```
-
-## Requirements
-
-- Python 3.x
-- KaggleHub (To download the dataset)
-- TensorFlow
-- NumPy
-- Scikit-learn
-- Streamlit
-- Pillow
