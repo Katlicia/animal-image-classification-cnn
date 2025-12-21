@@ -37,8 +37,9 @@ data_augmentation = tf.keras.Sequential([
 # Normalization
 normalization_layer = tf.keras.layers.Rescaling(1./255)
 
-train_ds = train_ds.map(lambda x, y: (normalization_layer((data_augmentation(x, training=True))), y))
+# train_ds = train_ds.map(lambda x, y: (normalization_layer((data_augmentation(x, training=True))), y))
 
+train_ds = train_ds.map(lambda x, y: (normalization_layer(x), y))
 test_ds = test_ds.map(lambda x, y: (normalization_layer(x), y))
 
 model = create_cnn_model()
@@ -51,7 +52,7 @@ model.compile(
 
 model.summary()
 
-EPOCHS = 25
+EPOCHS = 30
 
 history = model.fit(
     train_ds,
@@ -59,4 +60,4 @@ history = model.fit(
     epochs=EPOCHS
 )
 
-model.save("animal_model_with_augmentation.keras")
+model.save("animal_model_2.keras")
