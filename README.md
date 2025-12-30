@@ -46,10 +46,10 @@ Input images are normalized to the range [0, 1].
 ## Evaluation Metrics
 
 Model performance is evaluated using:
-- Accuracy
-- Precision
-- Recall
-- F1 Score
+- Accuracy: 0.6822
+- Precision: 0.6717
+- Recall: 0.6560
+- F1 Score: 0.6616
 
 ---
 
