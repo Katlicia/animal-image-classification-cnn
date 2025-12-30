@@ -114,5 +114,5 @@ python model/detect.py
 ```
 ### Create a web interface with app.py
 ```
-python app.py
+streamlit run app.py
 ```
