@@ -28,6 +28,7 @@ test_ds = tf.keras.utils.image_dataset_from_directory(
     shuffle=False
 )
 
+
 # data_augmentation = tf.keras.Sequential([
 #     layers.RandomFlip("horizontal"),
 #     layers.RandomRotation(0.1),
