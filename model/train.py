@@ -28,11 +28,11 @@ test_ds = tf.keras.utils.image_dataset_from_directory(
     shuffle=False
 )
 
-data_augmentation = tf.keras.Sequential([
-    layers.RandomFlip("horizontal"),
-    layers.RandomRotation(0.1),
-    layers.RandomZoom(0.1)
-])
+# data_augmentation = tf.keras.Sequential([
+#     layers.RandomFlip("horizontal"),
+#     layers.RandomRotation(0.1),
+#     layers.RandomZoom(0.1)
+# ])
 
 # Normalization
 normalization_layer = tf.keras.layers.Rescaling(1./255)

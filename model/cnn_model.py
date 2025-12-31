@@ -18,7 +18,6 @@ def create_cnn_model():
 
         layers.Flatten(),
         layers.Dense(128, activation='relu'),
-        layers.Dropout(0.5),
         layers.Dense(NUM_CLASSES, activation='softmax')
     ])
 
